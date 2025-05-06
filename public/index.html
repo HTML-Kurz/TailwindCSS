@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start – Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS – generated style.css -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased text-gray-700">
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="bg-primary text-white">
+    <div class="container mx-auto max-w-7xl px-4 py-6 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="assets/img/logo.svg" alt="Start logo" class="h-6">
+        <span class="text-xl font-semibold">Start</span>
+      </a>
+
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-gray-200">Home</a>
+        <a href="#portfolio" class="hover:text-gray-200">Portfolio</a>
+        <a href="#services" class="hover:text-gray-200">Services</a>
+        <a href="#contact" class="hover:text-gray-200">Contact</a>
+      </nav>
+
+      <!-- hamburger -->
+      <button id="menuBtn" class="md:hidden flex flex-col justify-between w-7 h-6 focus:outline-none" aria-label="Toggle navigation">
+        <span class="block w-full h-0.5 bg-white"></span>
+        <span class="block w-full h-0.5 bg-white"></span>
+        <span class="block w-full h-0.5 bg-white"></span>
+      </button>
+    </div>
+
+    <nav id="mobileNav" class="md:hidden hidden border-t border-white/20">
+      <div class="px-4 pb-4 space-y-2">
+        <a href="#home"      class="block py-2">Home</a>
+        <a href="#portfolio" class="block py-2">Portfolio</a>
+        <a href="#services"  class="block py-2">Services</a>
+        <a href="#contact"   class="block py-2">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section id="home" class="bg-primary text-white">
+    <div class="container mx-auto max-w-7xl px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
+      <!-- IMG first mobile -->
+      <div class="flex justify-center md:justify-end order-1 md:order-2">
+        <img src="assets/img/hero-illustration.png" alt="Idea illustration" class="w-full max-w-md">
+      </div>
+
+      <!-- TEXT -->
+      <div class="order-2 md:order-1 hero-content">
+        <p class="label-text !text-white mb-2">Welcome</p>
+        <h1 class="mb-4 w-335 md:w-416">
+          Lorem ipsum dolor sit amet consectetur
+        </h1>
+        <p class="mb-6">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?
+        </p>
+        <a href="#portfolio" class="btn-light">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PARTNERS ======= -->
+  <section id="partners" class="py-20">
+    <div class="container mx-auto max-w-5xl px-4 text-center">
+      <p class="section-label text-primary">Partners</p>
+      <h2 class="mb-4">Lorem Ipsum Dolor</h2>
+      <p class="description-text mb-8 mx-auto w-335 md:w-auto">Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit.</p>
+
+      <div class="flex flex-wrap justify-center items-center gap-y-6 gap-x-4 sm:gap-x-8 md:gap-x-12 lg:gap-x-17">
+        <img src="assets/img/google.png"    alt="Google"    class="h-8 w-auto object-contain mx-auto basis-full md:basis-auto">
+        <img src="assets/img/microsoft.png" alt="Microsoft" class="h-8 w-auto object-contain mx-auto basis-full md:basis-auto">
+        <img src="assets/img/airbnb.png"    alt="Airbnb"    class="h-8 w-auto object-contain mx-auto basis-full md:basis-auto">
+        <img src="assets/img/facebook.png"  alt="Facebook"  class="h-8 w-auto object-contain mx-auto basis-full md:basis-auto">
+        <img src="assets/img/spotify.png"   alt="Spotify"   class="h-8 w-auto object-contain mx-auto basis-full md:basis-auto">
+      </div>
+
+      <a href="#services" class="btn-dark mt-12">Learn More</a>
+    </div>
+  </section>
+
+  <!-- ======= FEATURE 1 ======= -->
+  <section class="py-20 bg-light">
+    <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+      <!-- IMG first mobile -->
+      <div class="order-1 md:order-1">
+        <img src="assets/img/feature1.png" alt="Chat illustration" class="w-full max-w-md mx-auto">
+      </div>
+
+      <!-- TEXT -->
+      <div class="order-2 md:order-2 feature-text">
+        <h3 class="mb-4 w-335 md:w-462">Lorem ipsum dolor sit amet consectetur</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+        <a href="#services" class="btn-dark">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FEATURE 2 ======= -->
+  <section class="py-20">
+    <div class="container mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+      <!-- IMG first mobile -->
+      <div class="flex justify-center md:justify-end order-1 md:order-2">
+        <img src="assets/img/feature2.png" alt="Security illustration" class="w-full max-w-md">
+      </div>
+
+      <!-- TEXT -->
+      <div class="order-2 md:order-1 feature-text">
+        <h3 class="mb-4 w-335 md:w-470">Lorem ipsum dolor sit amet consectetur</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+        <a href="#services" class="btn-dark">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TEAM ======= -->
+  <section id="team" class="py-20 bg-light">
+    <div class="container mx-auto max-w-7xl px-4 text-center">
+      <p class="section-label text-primary">Team</p>
+      <h2 class="mb-4">Our Talents</h2>
+      <p class="description-text mb-12 mx-auto w-335 md:w-auto">Lorem ipsum, dolor sit amet consectetur <br> Suscipit nemo hic quos, ab.</p>
+
+      <div class="grid gap-47 sm:grid-cols-2 lg:grid-cols-4 justify-items-center">
+        <!-- CARD 1 -->
+        <div class="card-team items-start">
+          <img src="assets/img/team/ceo.png" alt="Peg Legge" class="card-avatar self-center no-scale">
+          <h4 class="card-name text-right">Peg Legge</h4>
+          <p  class="card-role text-right">CEO</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-team items-start">
+          <img src="assets/img/team/cto.png" alt="Richard Guerra" class="card-avatar self-center no-scale">
+          <h4 class="card-name text-right">Richard Guerra</h4>
+          <p  class="card-role text-right">CTO</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-team items-start">
+          <img src="assets/img/team/designer1.png" alt="Alexandra Stolz" class="card-avatar self-center no-scale">
+          <h4 class="card-name text-right">Alexandra Stolz</h4>
+          <p  class="card-role text-right">Designer</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-team items-start">
+          <img src="assets/img/team/dev.png" alt="Janet Bray" class="card-avatar self-center no-scale">
+          <h4 class="card-name text-right">Janet Bray</h4>
+          <p  class="card-role text-right">Developer</p>
+        </div>
+      </div>
+
+      <a href="#team" class="btn-dark mt-12">View Team</a>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="bg-primary text-white">
+    <div class="container mx-auto max-w-7xl px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex space-x-4">
+        <img src="assets/img/socials.png" alt="Social icons" class="no-scale">
+      </div>
+      <p>&copy; Start, 2025. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ======= JS: mobile nav toggle ======= -->
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    btn.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

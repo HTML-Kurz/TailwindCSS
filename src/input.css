@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- CUSTOM COMPONENTS ---------- */
+
+@tailwind utilities;
+
+@layer utilities {
+  @screen lg { img { @apply scale-125; } }
+  /* výjimky */
+  @screen lg { .no-scale { @apply scale-100; } }
+}
+
+@layer base {
+  /* Base typography styles */
+  h1 {
+    @apply font-serif font-bold leading-tight;
+    @apply text-h1-mobile md:text-h1-desktop;
+  }
+
+  h2 {
+    @apply font-serif font-bold leading-tight;
+    @apply text-h3-mobile md:text-h1-desktop;
+  }
+
+  h3 {
+    @apply font-serif font-bold leading-tight;
+    @apply text-h3-mobile md:text-h3-desktop;
+  }
+
+  /* Label text (WELCOME, PARTNERS, TEAM) */
+  .label-text {
+    @apply font-sans font-bold text-label uppercase tracking-[5px];
+  }
+}
+
+@layer components {
+  /* Základ všech buttonů */
+  .btn-base {
+    @apply inline-flex items-center justify-center
+           w-btn-w h-btn-h rounded-btn flex-shrink-0
+           font-sans font-normal text-sub leading-tight;
+  }
+
+  /* Světlý (Explore) */
+  .btn-light {
+    @apply btn-base bg-white text-black hover:shadow;
+  }
+
+  /* Tmavý (Learn More, View Team) */
+  .btn-dark {
+    @apply btn-base bg-dark text-white hover:bg-black;
+  }
+
+  /* Hero content */
+  .hero-content p {
+    @apply text-white-75 text-body leading-tight;
+    @apply w-335 md:w-416;
+  }
+
+  /* Section header styles */
+  .section-label {
+    @apply label-text mb-2;
+  }
+
+  /* Feature section text */
+  .feature-text p {
+    @apply text-dark-50 text-body leading-tight mb-6;
+    @apply w-335 md:w-470;
+  }
+
+  /* Description text */
+  .description-text {
+    @apply font-sans text-sub leading-tight;
+    @apply text-gray-500;
+  }
+
+  /* Karta člena týmu */
+  .card-team {
+    @apply w-card-w h-card-h rounded-[5px] bg-white shadow-card
+           flex flex-col items-start p-6;
+  }
+
+  /* Avatar v kartě */
+  .card-avatar {
+    @apply w-175 h-175 rounded-full mb-6 object-cover;
+  }
+
+  /* Jméno v kartě */
+  .card-name {
+    @apply font-serif text-[#212529] font-bold text-cardName mb-1;
+  }
+
+  /* Pozice v kartě */
+  .card-role {
+    @apply font-sans text-[#212529BF] text-body;
+  }
+}
