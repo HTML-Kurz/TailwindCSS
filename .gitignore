@@ -1,5 +1,8 @@
 # závislosti
 node_modules/
 
+# build výstupy (Tailwind)
+public/assets/css/style.css
+
 # systémové soubory
 .DS_Store
